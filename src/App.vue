@@ -30,7 +30,6 @@
 <script>
 	/* eslint-disable */
 	import * as components from '@/components';
-	import { VcParagraph } from 'vue-cosk';
 
 	export default {
 		name: 'App',
