@@ -68,11 +68,12 @@
 			loadImages() {
 				let srcs = [];
 				for (let i = 1; i <= 32; i++) {
-					srcs.push(`slides/${i.toString().padStart(2, '0')}.jpg`);
+					srcs.push(
+						`slides/${i.toString().padStart(2, '0')}.jpg`
+						);
 				}
 
 				this.vfImages = [];
-				this.vfCaptions = [];
 
 				let index, src;
 
@@ -82,13 +83,11 @@
 					src = srcs.splice(index, 1)[0];
 
 					this.vfImages.push(src);
-					this.vfCaptions.push(src);
 				}
 			},
 
 			addImage(url, author, location) {
 				this.vfImages.push(url);
-				this.vfCaptions.push(location +' - '+ author);
 			},
 
 			showNext(transition) {
