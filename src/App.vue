@@ -108,23 +108,4 @@
 	.vue-flux {
 		box-shadow: 0 0 12px 2px rgba(34,36,38,.85);
 	}
-
-	.flux-parallax {
-		display: flex;
-		position: relative;
-		font-size: 3rem;
-		color: white;
-		font-weight: bold;
-		justify-content: center;
-		align-items: center;
-		text-shadow:
-			-2px -2px 0 black,
-			2px -2px 0 black,
-			-2px  2px 0 black,
-			2px  2px 0 black;
-	}
-
-	p {
-		margin: 24px 0;
-	}
 </style>
