@@ -10,9 +10,7 @@
 						ref="slider"
 						:options="vfOptions"
 						:images="vfImages"
-						:transitions="vfTransitions"
-						:captions="vfCaptions"
-					>
+						:transitions="vfTransitions"					>
 
 						<template v-slot:preloader>
 							<flux-preloader />
@@ -54,7 +52,6 @@
 				lazyLoadAfter: 5,
 			},
 			vfImages: [],
-			vfCaptions: [],
 		}),
 
 		computed: {
