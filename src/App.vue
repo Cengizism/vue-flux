@@ -36,7 +36,6 @@
 
 		components: {
 			...components,
-			VcParagraph,
 		},
 
 		data: () => ({
