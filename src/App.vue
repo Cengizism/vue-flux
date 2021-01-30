@@ -98,14 +98,18 @@
 </script>
 
 <style lang="scss">
-	.test {
-		.flux-image {
-			border: 1px solid white;
-			border-collapse: collapse;
-		}
+	html {
+		height: 100%;
+		width: 100%;
 	}
 
 	.vue-flux {
-		box-shadow: 0 0 12px 2px rgba(34,36,38,.85);
+		min-height: 100%;
+		min-width: 100%;
+		width: auto;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
 	}
 </style>
