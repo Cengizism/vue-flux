@@ -3,6 +3,7 @@ node_modules
 /dist
 /dist-ssr
 /coverage
+/public/slides
 
 # local env files
 .env.local
