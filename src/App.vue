@@ -27,13 +27,17 @@
 
 <script>
 	/* eslint-disable */
-	import * as components from '@/components';
+	import {
+		VueFlux,
+		FluxPreloader,
+	} from '@/components';
 
 	export default {
 		name: 'App',
 
 		components: {
-			...components,
+			VueFlux,
+			FluxPreloader,
 		},
 
 		data: () => ({
