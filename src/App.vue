@@ -46,7 +46,7 @@
 				autoplay: true,
 				enableGestures: true,
 				delay: 20000,
-				aspectRatio: '4:3',
+				aspectRatio: '3:4',
 				bindKeys: true,
 				allowFullscreen: true,
 				lazyLoadAfter: 5,
@@ -67,7 +67,7 @@
 		methods: {
 			loadImages() {
 				let srcs = [];
-				for (let i = 1; i <= 32; i++) {
+				for (let i = 1; i <= 91; i++) {
 					srcs.push(
 						`slides/${i.toString().padStart(2, '0')}.jpg`
 						);
