@@ -3,7 +3,6 @@ node_modules
 /dist
 /dist-ssr
 /coverage
-/public/slides
 
 # local env files
 .env.local
@@ -28,3 +27,6 @@ yarn-error.log*
 package-lock.json
 yarn.lock
 links.txt
+*.jpg
+*.jpeg
+/public/slides
