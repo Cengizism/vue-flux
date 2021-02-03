@@ -77,7 +77,7 @@
 
 				let index, src;
 
-				for (let i = 0; i < 32; i++) {
+				for (let i = 0; i < 91; i++) {
 					index = Math.floor(Math.random() * srcs.length);
 
 					src = srcs.splice(index, 1)[0];
