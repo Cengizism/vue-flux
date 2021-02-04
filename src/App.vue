@@ -50,7 +50,7 @@
 				autohideTime: 0,
 				autoplay: true,
 				enableGestures: true,
-				delay: 30000,
+				delay: 20000,
 				aspectRatio: '3:4',
 				bindKeys: true,
 				allowFullscreen: true,
