@@ -41,7 +41,7 @@
 		},
 
 		data: () => ({
-			source: 'http://localhost:3000/slides',
+			source: 'http://localhost:3000/images',
 			rendered: true,
 			transitions: ['fade'],
 			selectedTransition: 'fade',
