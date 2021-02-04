@@ -41,6 +41,7 @@
 		},
 
 		data: () => ({
+			source: 'http://localhost:3000/slides',
 			rendered: true,
 			transitions: ['fade'],
 			selectedTransition: 'fade',
@@ -65,23 +66,37 @@
 		},
 
 		created() {
-			this.loadImages();
+			fetch(this.source)
+				.then(async response => {
+					const data = await response.json();
+
+					if (!response.ok) {
+						const error = 
+							(data && data.message) || response.statusText;
+						return Promise.reject(error);
+					}
+
+					this.loadImages(data);
+				})
+				.catch(error => {
+					this.errorMessage = error;
+					console.error("There was an error fetching images!", error);
+				});
 		},
 
 		methods: {
-			loadImages() {
+			loadImages(list) {
 				let srcs = [];
-				for (let i = 1; i <= 91; i++) {
-					srcs.push(
-						`slides/${i.toString().padStart(2, '0')}.jpg`
-						);
+
+				for (let i = 0; i < list.length; i++) {
+					srcs.push(`slides/${list[i]}`);
 				}
 
 				this.vfImages = [];
 
 				let index, src;
 
-				for (let i = 0; i < 91; i++) {
+				for (let i = 0; i < list.length; i++) {
 					index = Math.floor(Math.random() * srcs.length);
 
 					src = srcs.splice(index, 1)[0];
