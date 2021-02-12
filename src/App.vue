@@ -10,7 +10,7 @@
 						ref="slider"
 						:options="vfOptions"
 						:images="vfImages"
-						:transitions="vfTransitions"					>
+						:transitions="vfTransitions">
 
 						<template v-slot:preloader>
 							<flux-preloader />
